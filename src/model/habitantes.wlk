@@ -12,6 +12,8 @@ object azucena {
 			casa.darCaramelos(1)
 	}
 	method relevo() = jorge
+	
+	method saludo() = "¡Ay, qué miedo! Jaja"
 }
 
 object sandra {
@@ -25,6 +27,12 @@ object sandra {
 		// No hace nada en particular
 	}
 	method relevo() = azucena
+	
+	method saludo() =
+		if(casa.estaEnOrden())
+			"¡Pasalo lindo y no hagas lío!"
+		else
+			"¬¬"
 }
 
 object jorge {
@@ -38,4 +46,6 @@ object jorge {
 		casa.acomodar(2)
 	}
 	method relevo() = sandra
+	
+	method saludo() = "¡Feliz Navidad!"
 }

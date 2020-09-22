@@ -17,8 +17,10 @@ object casa {
 	}
 	
 	method saludo(){
-		//TODO debería retornar un string con el saludo a mostrar
-		return "..."
+		if(self.seTerminoLaDiversion())
+			return "¡Suficiente por hoy! Nos vamos a dormir."
+			
+		return quienAbreLaPuerta.saludo()
 	}
 	
 	method seTerminoLaDiversion() {

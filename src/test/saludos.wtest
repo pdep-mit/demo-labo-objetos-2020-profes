@@ -32,7 +32,7 @@ describe "Saludo a mostrar luego de una visita a la casa" {
 		assert.equals("¬¬" , casa.saludo())
 	}
 	test "Saludo cuando el que abre la puerta es Jorge" {
-		casa.quienAbreLaPuerta(sandra)
+		casa.quienAbreLaPuerta(jorge)
 		assert.equals("¡Feliz Navidad!", casa.saludo())
 	}
 	test "Saludo cuando se terminó la diversión" {
