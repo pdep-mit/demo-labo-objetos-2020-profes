@@ -1,4 +1,5 @@
 import gameConfiguration.*
+import wollok.game.*
 
 /*
 * Acá se define cómo se mueven los personajes cuando se usan las flechitas.
@@ -25,9 +26,15 @@ object haciaAbajo {
 }
 
 object haciaLaDerecha {
-	method posicionSiguiente(posicion) = posicion.right(1)	
+	method posicionSiguiente(posicion)
+		= if(config.anchoMaximo() - 1 == posicion.x())
+			game.at(0, posicion.y())
+		  else posicion.right(1)	
 }
 
 object haciaLaIzquierda {
-	method posicionSiguiente(posicion) = posicion.left(1)	
+	method posicionSiguiente(posicion)
+		= if(posicion.x() == 0)
+			game.at(config.anchoMaximo() - 1, posicion.y())
+		  else posicion.left(1)	
 }

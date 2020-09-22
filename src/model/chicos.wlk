@@ -1,5 +1,6 @@
 import wollok.game.*
 import disfraces.*
+import game.movimientos.*
 
 object rolo {
 	var property position = game.origin()
@@ -18,7 +19,7 @@ object juanita {
 	var property disfraz = superheroe
 
 	method position(){
-		return tito.position().left(1)
+		return haciaLaIzquierda.posicionSiguiente(tito.position())
 	}
 	method image() = disfraz.nombreImagen(self)
 	method nombre() = "juanita"
