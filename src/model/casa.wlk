@@ -8,7 +8,7 @@ object casa {
 	method image() = "casa.png"
 	
 	method abrirleA(alguien) {
-		// TODO debería hacer lo que corresponda en base a quién visitó la casa 
+		alguien.visitar(self) 
 	}
 	
 	method cerrarLaPuerta(){
@@ -33,4 +33,11 @@ object casa {
 		self.cerrarLaPuerta()
 	}
 	method estaEnOrden() = caos < 3
+	
+	method pidioCaramelos(alguien){
+		caramelos -= caramelos.min(alguien.cuantosCaramelosPuedeConseguir(quienAbreLaPuerta))
+	}
+	method aumentarCaos(cantidad){
+		caos += cantidad
+	}
 }

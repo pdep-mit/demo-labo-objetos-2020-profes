@@ -8,6 +8,9 @@ object rolo {
 	method cuantosCaramelosPuedeConseguir(unHabitante){
 		return 1
 	}
+	method visitar(unaCasa){
+		unaCasa.aumentarCaos(5)
+	}
 	
 }
 
@@ -24,6 +27,10 @@ object juanita {
 	}
 	method cuantosCaramelosPuedeConseguir(unHabitante) {
 		return 2 + unHabitante.cuantosCaramelosDaria(disfraz)
+	}
+	
+	method visitar(unaCasa){
+		unaCasa.pidioCaramelos(self)
 	}
 }
 
@@ -42,5 +49,10 @@ object tito {
 			return juanita.cuantosCaramelosPuedeConseguir(unHabitante)
 		else
 			return unHabitante.cuantosCaramelosDaria(disfraz)
+	}
+	
+	method visitar(unaCasa){
+		unaCasa.pidioCaramelos(self)
+		unaCasa.aumentarCaos(1)
 	}
 }
