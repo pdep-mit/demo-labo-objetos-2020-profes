@@ -37,7 +37,7 @@ Para determinar **cuántos caramelos podría conseguir** un chico de un habitant
 Respecto a los disfraces que pueden usar Tito y/o Juanita, debemos contemplar los siguientes (deben definirse en `model/disfraces.wlk` y se espera poder referenciarlos globalmente con los nombres indicados):
 - el disfraz de `venom` tiene 0 ternura y terror 8,
 - el disfraz de `superheroe` tiene ternura 5 y terror 0,
-- el disfraz de `ionman` tiene ternura 1 y terror 4,
+- el disfraz de `ironman` tiene ternura 1 y terror 4,
 - el disfraz de `harleyQuinn` tiene ternura 9 y terror 2.
 
 > Tanto Tito como Juanita deberían usar el disfraz de `superheroe` al iniciar el juego, pero deberían poder cambiar su disfraz independientemente al mandarles el mensaje `disfraz(nuevoDisfraz)`.
