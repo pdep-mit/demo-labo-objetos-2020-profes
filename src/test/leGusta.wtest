@@ -4,31 +4,31 @@ import model.habitantes.*
 describe "Saber si a alguien le gusta un disfraz" {
 
 	test "A azucena no le gustan los disfraces que no son adorables" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 3)
+		assert.notThat(azucena.leGusta(disfraz))
 	}
 	test "A azucena le gusta un disfraz adorable" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 7, terror = 3)
+		assert.that(azucena.leGusta(disfraz))
 	}
 	
 	test "A Sandra le gustan disfraces mas tiernos que aterradores" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 3)
+		assert.that(sandra.leGusta(disfraz))
 	}
 	
 	test "A Sandra no le gusta un disfraz mas aterrador que tierno" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 6)
+		assert.notThat(sandra.leGusta(disfraz))
 	}
 	
 	test "A Jorge no le gustan disfraces que no son terrorificos" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 6)
+		assert.notThat(jorge.leGusta(disfraz))
 	}
 	
 	test "A Jorge le gustan los disfraces terrorificos" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 8)
+		assert.that(jorge.leGusta(disfraz))
 	}
 }
