@@ -9,17 +9,18 @@ describe "Cuantos caramelos puede conseguir un chico en una casa" {
 	}
 	
 	test "Juanita puede conseguir 2 caramelos extra de quien abra la puerta" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		assert.equals(12, juanita.cuantosCaramelosPuedeConseguir(jorge))
 	}
 	
 	test "Tito puede conseguir tantos caramelos como Juanita si se disfrazan igual" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		tito.disfraz(juanita.disfraz())
+		casa.caramelos(80)
+		assert.equals(12, tito.cuantosCaramelosPuedeConseguir(jorge))
 	}
 	
 	test "Tito puede conseguir lo que da quien abre la puerta si se disfraza distinto de Juanita" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		tito.disfraz(venom)
+		casa.caramelos(80)
+		assert.equals(10, tito.cuantosCaramelosPuedeConseguir(jorge))
 	}
 }
