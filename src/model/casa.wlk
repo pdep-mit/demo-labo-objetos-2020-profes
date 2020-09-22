@@ -22,8 +22,7 @@ object casa {
 	}
 	
 	method seTerminoLaDiversion() {
-		//TODO se cumple si no hay más caramelos en la casa o si el nivel de caos es muy alto
-		return false
+		return caramelos == 0 || caos > 20
 	}
 	
 	// El saludador va a ser el juego cuando se corra el programa de esa forma.
