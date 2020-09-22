@@ -12,7 +12,8 @@ object casa {
 	}
 	
 	method cerrarLaPuerta(){
-		//TODO debería hacer lo que corresponda para el fin de la visita
+		quienAbreLaPuerta.cerrarLaPuerta()
+		quienAbreLaPuerta = quienAbreLaPuerta.relevo()
 	}
 	
 	method saludo(){
@@ -35,9 +36,15 @@ object casa {
 	method estaEnOrden() = caos < 3
 	
 	method pidioCaramelos(alguien){
-		caramelos -= caramelos.min(alguien.cuantosCaramelosPuedeConseguir(quienAbreLaPuerta))
+		self.darCaramelos(alguien.cuantosCaramelosPuedeConseguir(quienAbreLaPuerta))
 	}
 	method aumentarCaos(cantidad){
 		caos += cantidad
+	}
+	method darCaramelos(cantidad) {
+		caramelos -= caramelos.min(cantidad)
+	}
+	method acomodar(caosABajar) {
+		caos -= caosABajar 
 	}
 }
