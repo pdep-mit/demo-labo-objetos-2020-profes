@@ -5,30 +5,34 @@ import model.casa.*
 describe "Cuantos caramelos darían por un disfraz" {
 
 	test "Azucena da 5 caramelos cuando no le gusta el disfraz" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 4, terror = 3)
+		assert.equals(5, azucena.cuantosCaramelosDaria(disfraz))
 	}
 	
 	test "Azucena da tantos caramelos como ternura cuando le gusta el disfraz" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 10, terror = 3)
+		assert.equals(10, azucena.cuantosCaramelosDaria(disfraz))
 	}
 	
 	test "Sandra da 8 caramelos cuando la casa está en orden" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 1, terror = 1)
+		casa.caos(2)
+		assert.equals(8, sandra.cuantosCaramelosDaria(disfraz))
 	}
 	test "Sandra da 2 caramelos cuando la casa no está en orden" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 1, terror = 1)
+		casa.caos(3)
+		assert.equals(2, sandra.cuantosCaramelosDaria(disfraz))
 	}
 	
 	test "Jorge da 10 caramelos cuando hay muchos en la casa" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 1, terror = 1)
+		casa.caramelos(50)
+		assert.equals(10, jorge.cuantosCaramelosDaria(disfraz))
 	}
 	test "Jorge da 4 caramelos cuando hay menos caramelos en la casa" {
-		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 1, terror = 1)
+		casa.caramelos(49)
+		assert.equals(4, jorge.cuantosCaramelosDaria(disfraz))
 	}
 }

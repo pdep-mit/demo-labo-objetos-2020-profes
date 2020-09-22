@@ -32,4 +32,5 @@ object casa {
 		saludador.say(self, self.saludo())
 		self.cerrarLaPuerta()
 	}
+	method estaEnOrden() = caos < 3
 }
