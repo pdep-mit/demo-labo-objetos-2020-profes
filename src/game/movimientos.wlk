@@ -9,8 +9,11 @@ import gameConfiguration.*
 object movimiento {
 	method mover(personajeLibre, direccion){
 		const nuevaPosicion = direccion.posicionSiguiente(personajeLibre.position())
-		personajeLibre.position(nuevaPosicion)
+		if(self.alturaValida(nuevaPosicion.y()))
+			personajeLibre.position(nuevaPosicion)
 	}
+	method alturaValida(altura)
+		= altura >= 0 && altura <= config.alturaSuelo()
 }
 
 object haciaArriba {
