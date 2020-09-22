@@ -18,8 +18,7 @@ object juanita {
 	var property disfraz = superheroe
 
 	method position(){
-		// TODO: debería estar siempre una celda a la derecha de tito
-		return game.at(1, 0)
+		return tito.position().left(1)
 	}
 	method image(){
 		// TODO: debería cambiar cuando se cambia el disfraz
