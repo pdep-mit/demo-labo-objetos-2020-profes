@@ -46,15 +46,13 @@ object config {
 		keyboard.left().onPressDo({ movimiento.mover(personajeControlado, haciaLaIzquierda) })
 		keyboard.right().onPressDo({ movimiento.mover(personajeControlado, haciaLaDerecha) })
 		
-		// TODO: descomentar luego de declarar los disfraces
-		/*
 		keyboard.num(1).onPressDo({tito.disfraz(venom)})
 		keyboard.num(2).onPressDo({tito.disfraz(superheroe)})
 		keyboard.num(3).onPressDo({tito.disfraz(ironman)})
 		
 		keyboard.num(9).onPressDo({juanita.disfraz(superheroe)})
 		keyboard.num(0).onPressDo({juanita.disfraz(harleyQuinn)})
-		 */
+		
 	}
 	
 	method configurarColisiones(){

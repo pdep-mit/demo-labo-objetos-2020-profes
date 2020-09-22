@@ -4,23 +4,23 @@ import model.chicos.*
 describe "Cómo deberían verse Tito y Juanita cuando se disfrazan" {
 
 	test "Imagen a mostrar cuando Tito se disfraza de Superhéroe" {
-		// TODO: asegurar que el disfraz de tito sea el correcto
+		tito.disfraz(superheroe)
 		assert.equals("tito-superheroe.png", tito.image())
 	}
 	test "Imagen a mostrar cuando Tito se disfraza de Venom" {
-		// TODO: asegurar que el disfraz de tito sea el correcto
+		tito.disfraz(venom)
 		assert.equals("tito-venom.png", tito.image())
 	}
 	test "Imagen a mostrar cuando Tito se disfraza de Ironman" {
-		// TODO: asegurar que el disfraz de tito sea el correcto
+		tito.disfraz(ironman)
 		assert.equals("tito-ironman.png", tito.image())
 	}
 	test "Imagen a mostrar cuando Juanita se disfraza de Superhéroe" {
-		// TODO: asegurar que el disfraz de tito sea el correcto
+		juanita.disfraz(superheroe)
 		assert.equals("juanita-superheroe.png", juanita.image())
 	}
 	test "Imagen a mostrar cuando Juanita se disfraza de Harley Quinn" {
-		// TODO: asegurar que el disfraz de tito sea el correcto
+		juanita.disfraz(harleyQuinn)
 		assert.equals("juanita-harleyquinn.png", juanita.image())
 	}
 }

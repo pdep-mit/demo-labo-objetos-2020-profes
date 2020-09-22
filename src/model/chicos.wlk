@@ -20,10 +20,8 @@ object juanita {
 	method position(){
 		return tito.position().left(1)
 	}
-	method image(){
-		// TODO: debería cambiar cuando se cambia el disfraz
-		return "juanita-superheroe.png"
-	}
+	method image() = disfraz.nombreImagen(self)
+	method nombre() = "juanita"
 	method cuantosCaramelosPuedeConseguir(unHabitante) {
 		return 2 + unHabitante.cuantosCaramelosDaria(disfraz)
 	}
@@ -38,10 +36,8 @@ object tito {
 	
 	var property disfraz = superheroe
 
-	method image(){
-		// TODO: debería cambiar cuando se cambia el disfraz
-		return "tito-superheroe.png"
-	}
+	method image() = disfraz.nombreImagen(self)
+	method nombre() = "tito"
 	
 	method cuantosCaramelosPuedeConseguir(unHabitante) { 
 		if(disfraz == juanita.disfraz()) 
