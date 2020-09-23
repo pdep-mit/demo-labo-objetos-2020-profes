@@ -12,13 +12,14 @@ object rolo {
 }
 
 object juanita {
+	var property disfraz = superheroe
 	method position(){
 		// TODO: debería estar siempre una celda a la derecha de tito
 		return game.at(1, 0)
 	}
 	method image(){
 		// TODO: debería cambiar cuando se cambia el disfraz
-		return "juanita-superheroe.png"
+		return "juanita-" + disfraz.sufijoImagen()
 	}
 	method cuantosCaramelosPuedeConseguir(unHabitante) {
 		//TODO: debería depender de quién abre la puerta de la casa

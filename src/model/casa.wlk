@@ -8,7 +8,8 @@ object casa {
 	method image() = "casa.png"
 	
 	method abrirleA(alguien) {
-		// TODO debería hacer lo que corresponda en base a quién visitó la casa 
+		// TODO debería hacer lo que corresponda en base a quién visitó la casa
+		alguien.visitar(self) 
 	}
 	
 	method cerrarLaPuerta(){

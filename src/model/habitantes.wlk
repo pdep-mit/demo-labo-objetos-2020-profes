@@ -1,7 +1,14 @@
 import casa.*
 
 object azucena {	
-	// TODO: implementar la lógica de Azucena
+	method leGusta(disfraz) = disfraz.esAdorable()
+	method cuantosCaramelosDaria(disfraz){
+		if(self.leGusta(disfraz)){
+			return disfraz.ternura()
+		} else {
+			return 5
+		}
+	}
 }
 
 object sandra {

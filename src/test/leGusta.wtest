@@ -5,7 +5,8 @@ describe "Saber si a alguien le gusta un disfraz" {
 
 	test "A azucena no le gustan los disfraces que no son adorables" {
 		// TODO testear
-		assert.fail("Falta implementar")
+		const disfraz = new Disfraz(ternura = 5, terror = 5)
+		assert.notThat(azucena.leGusta(disfraz))
 	}
 	test "A azucena le gusta un disfraz adorable" {
 		// TODO testear
