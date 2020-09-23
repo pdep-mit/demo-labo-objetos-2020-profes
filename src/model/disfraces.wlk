@@ -6,7 +6,7 @@ class Disfraz {
 	method adorable() = ternura > 6 && terror < 4
 	method terrorifico() = terror >= 8
 	
-	method nombreImagen(chico) = chico.nombre() + "-" + nombre + ".png"
+	method sufijoImagen() = "-" + nombre + ".png"
 }
 
 const venom = new Disfraz(ternura = 0, terror = 8, nombre = "venom")

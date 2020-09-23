@@ -25,8 +25,7 @@ object juanita {
 		// Solución para BONUS
 		return haciaLaIzquierda.posicionSiguiente(tito.position())
 	}
-	method image() = disfraz.nombreImagen(self)
-	method nombre() = "juanita"
+	method image() = return "juanita" + disfraz.sufijoImagen()
 	method cuantosCaramelosPuedeConseguir(unHabitante) {
 		return 2 + unHabitante.cuantosCaramelosDaria(disfraz)
 	}
@@ -41,8 +40,7 @@ object tito {
 	
 	var property disfraz = superheroe
 
-	method image() = disfraz.nombreImagen(self)
-	method nombre() = "tito"
+	method image() = return "tito" + disfraz.sufijoImagen()
 	
 	method cuantosCaramelosPuedeConseguir(unHabitante) { 
 		if(disfraz == juanita.disfraz()) 
