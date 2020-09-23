@@ -19,6 +19,10 @@ object juanita {
 	var property disfraz = superheroe
 
 	method position(){
+		// Solución básica
+		// return tito.position().left(1)
+		
+		// Solución para BONUS
 		return haciaLaIzquierda.posicionSiguiente(tito.position())
 	}
 	method image() = disfraz.nombreImagen(self)
